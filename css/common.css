@@ -1,0 +1,233 @@
+button {
+    outline: none;
+    cursor: pointer;
+}
+body {
+  min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+.gfheader {
+    width: 100%;
+    background-image: url(../images/backgroundimages.jpg);
+    background-size: cover;
+    color: white;
+}
+.headerLogo {
+    margin-top: 3%;
+    margin-left: 5%;
+    float: left;
+    width: 18%;
+    min-width: 100px;
+    min-height: 30px;
+    height: 20%;
+}
+.headerNav {
+    float: right;
+    background-color: #000;
+    opacity: 0.8;
+    border-top-left-radius: .9rem;
+    border-bottom-left-radius: .9rem;
+    height: 18%;
+    width: 14%;
+    box-sizing: border-box;
+    padding-top: .6rem;
+    margin-top: 5%;
+    text-align: center;
+    font-size: .6rem;
+    min-height: 30px;
+}
+.headerNav> * {
+    padding-right: 3%;
+}
+.headerNav a {
+    font-size: .6rem;
+    color: white;
+    text-decoration: none;
+}
+.headerNav a:hover {
+    text-decoration: underline;
+}
+.gfContainer {
+
+    width: 60%;
+    height: 100%;
+
+    border-radius: .5rem;
+    margin: -20px auto;
+
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 1px 1px 1px 1px #cccccc;
+left: 180px;
+
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gfContainer a {
+    text-decoration: none;
+}
+.gfContainer p {
+    display: flex;
+    font-size: .3rem;
+    align-items: center;
+    width: 100%;
+}
+.gfContainer span {}
+.gflogcontent h3 {
+    font-weight: 500;
+    font-size: .8rem;
+    padding-bottom: .8rem;
+}
+.gflogcontent input {
+    width: 60%;
+    margin-left: 2%;
+}
+.gflogcontent> * {
+    margin-bottom: .5rem;
+}
+.logbtn {
+    height: 1rem;
+    font-size: .3rem;
+    text-align: center;
+    width: 2rem;
+    border: none;
+    background-color: #00a0e9;
+    color: #fff;
+    margin-top: .3rem;
+}
+.gflogcontent h3 {
+    font-weight: bolder;
+    font-size: .8rem;
+    padding-bottom: 1.5rem;
+}
+.gflogcontent input {
+    width: 60%;
+    height: .8rem;
+}
+.gflogcontent> * {
+    margin-bottom: .5rem;
+}
+.routerframe {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: white;
+}
+.routerframe button a {
+    color: white;
+}
+.routerframe span {
+    display: inline-block;
+    margin-top: .3rem;
+}
+.routerframe span a {
+    color: #00a0e9;
+}
+.routerframe> * {
+    margin-right: 2%;
+}
+.gffooter {
+
+    margin-top: 5rem;
+    background-color: #4c5254;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: .5rem;
+}
+.registerverify {
+    color: red;
+}
+@media only screen and (max-width: 325px) {
+    html {
+        font-size: 50% !important;
+    }
+    .gfheader {
+        height: 80px;
+    }
+    .headerNav {
+        width: 22%;
+        height: 22%;
+    }
+    .headerNav> * {
+        padding-right: 0px;
+    }
+}
+.navHide {
+    display: none;
+}
+@media only screen and (min-width: 326px) and (max-width: 639px) {
+    html {
+        font-size: 62.5% !important;
+    }
+    .gfheader {
+        height: 100px;
+    }
+    .headerNav {
+        width: 18%;
+        height: 22%;
+    }
+}
+@media only screen and (min-width: 640px) and (max-width: 749px) {
+    html {
+        font-size: 125% !important;
+    }
+    .gfheader {
+        height: 200px;
+    }
+}
+@media only screen and (min-width: 750px) and (max-width: 1241px) {
+    html {
+        font-size: 150% !important;
+    }
+    .gfheader {
+        height: 240px;
+    }
+}
+@media only screen and (min-width: 1242px) {
+    html {
+        font-size: 187.5% !important;
+    }
+    .gfheader {
+        height: 400px;
+    }
+}
+.tab1 {
+  position: fixed;
+
+    box-shadow: 1px 1px 1px 1px #cccccc;
+    border-radius: .5rem;
+    left:20px;
+    margin: -20px auto;
+    background-color: #222;
+}
+.tab1 ul{
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.container-fluid {
+  padding-right:6px;
+  padding-left: 6px;
+}
+.tab1 ul li{}
+.tab1 ul a{
+  font-size: .5rem;
+    height: 2.1em;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: green;
+}
+.left{
+  width:10%;
+  min-width:120px;
+  height: 120%;
+  min-height: 500px;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "gf-web",
+  "version": "1.0.0",
+  "description": "gf-houtai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bosenY",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
+}

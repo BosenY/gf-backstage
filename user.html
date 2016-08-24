@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>光伏后台管理系统-用户管理</title>
+<script src="js/verify.js"></script>
+
+    <link href="css/right.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+      <link href="css/common.css" rel="stylesheet">
+    <style media="screen">
+        .gfContainer {
+            display: block;
+            font-family: Microsoft YaHei;
+        }
+
+        .page-header {
+            width: 100%;
+            margin-top: -10px;
+            font-size: .9rem;
+            border-bottom: 2px solid #000;
+            display: flex;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .row div {
+            padding: 10px;
+        }
+
+        .btn {
+            font-size: .5rem;
+            margin-left: 10%;
+            min-width: 94px;
+        }
+
+        .verifyContainer,.resetContainer,.queryContainer,.listContainer,.transferContainer {
+            margin: auto;
+            margin-top: 30px;
+            display: none;
+        }
+
+        .checkCDKEY {
+            margin: 20px;
+        }
+        .form-horizontal{
+          width: 60%;
+          margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <gf-header></gf-header>
+
+    <div style="display:flex;">
+      <div class="container-fluid tab1">
+          <ul class="nav nav-pills nav-stacked navbar-inverse">
+              <li role="presentation"><a href="./credit.html">管理授权</a></li>
+              <li role="presentation" class="active" ><a href="./user.html">用户管理</a></li>
+              <li role="presentation"><a href="./log.html">日志管理</a></li>
+              <li role="presentation"><a href="./solar.html">组件修改</a></li>
+              <li role="presentation"><a href="./price.html">报价修改</a></li>
+              <li role="presentation"><a href="./clear.html">系统清理</a></li>
+              <li role="presentation"><a href="./query.html">查询项目</a></li>
+              <li role="presentation"><a href="./cdkey.html">激活码</a></li>
+              <li role="presentation"><a href="./reset.html">密码修改</a></li>
+              <li role="presentation"><a href="#gfHeader">返回顶部</a></li>
+              <li role="presentation"><a href="#gfFooter">返回底部</a></li>
+
+          </ul>
+      </div>
+      <div class="left" >
+
+      </div>
+    <div class="gfContainer">
+        <div class="container-fluid page-header">
+            <h1 style="width:80%; font-size:.8rem;">激活码</h1> <a href="./manage-index.html" style="display:inline-block; font-size:.7rem; margin-top:20px; margin-left:20px;">返回控制中心</a></div>
+        <h2 style="font-size: .5rem;">【激活账户】可以直接激活需要邮箱认证的账户。</h1>
+        <h2 style="font-size: .5rem;">【密码重置】将指定账户密码重置为[ETSOLAR]。</h1>
+        <h2 style="font-size: .5rem;">【账号迁移】将指定账号的数据迁移到一个新的邮箱账户（原邮箱账号废止）。</h1>
+        <h2 style="font-size: .5rem;">【账户查询】查询指定账户的用户信息</h1>
+        <h2 style="font-size: .5rem;">【查看新用户】批量查看最近注册的1000位新用户信息</h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-2.4">
+                  <button type="button"  class="btn btn-primary btn-block btn-lg verify"  >激活账户</button>
+              </div>
+              <div class="col-md-2.4">
+                  <button type="button"  class="btn btn-primary btn-block btn-lg reset"  >密码重置</button>
+              </div>
+              <div class="col-md-2.4">
+                  <button type="button"  class="btn btn-primary btn-block btn-lg query"  >账户查询</button>
+              </div>
+                <div class="col-md-2.4">
+                    <button type="button"  class="btn btn-primary btn-block btn-lg list"  >查看新用户</button>
+                </div>
+                <div class="col-md-2.4">
+                    <button type="button"  class="btn btn-primary btn-block btn-lg transfer" >账号迁移</button>
+                </div>
+
+            </div>
+          </div>
+          <div class="container-fluid " >
+            <div class="verifyContainer animated" >
+              <form class="form-horizontal">
+
+                  <div class="form-group form-group-sm">
+                      <label class="col-sm-2 control-label" for="accountEmail">账户邮箱:</label>
+                      <div class="col-sm-10" >
+                          <input class="form-control" type="text" id="accountEmail" >
+                      </div>
+                  </div>
+
+                  <button type="button" class="btn btn-primary" style="margin:auto;">提交</button>
+              </form>
+              </div>
+              <div class="resetContainer animated" >
+                <form class="form-horizontal">
+
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-2 control-label" for="resetEmail">账户邮箱:</label>
+                        <div class="col-sm-10" >
+                            <input class="form-control" type="text" id="resetEmail" >
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" style="margin:auto;">提交</button>
+                </form>
+                </div>
+                <div class="queryContainer animated" >
+                  <form class="form-horizontal">
+
+                      <div class="form-group form-group-sm">
+                          <label class="col-sm-2 control-label" for="queryEmail">账户邮箱:</label>
+                          <div class="col-sm-10" >
+                              <input class="form-control" type="text" id="queryEmail" >
+                          </div>
+                      </div>
+
+                      <button type="button" class="btn btn-primary" style="margin:auto;">提交</button>
+                  </form>
+                  </div>
+                  <div class="listContainer animated" >
+
+                    <table id="table"></table>
+                    </div>
+            <div class="transferContainer animated"  >
+              <form class="form-horizontal">
+
+                  <div class="form-group form-group-sm">
+                      <label class="col-sm-2 control-label" for="transferEmail">账户邮箱:</label>
+                      <div class="col-sm-10" >
+                          <input class="form-control" type="text" id="transferEmail" >
+                      </div>
+                  </div>
+                  <div class="form-group form-group-sm">
+                      <label class="col-sm-2 control-label" for="account">目标账户:</label>
+                      <div class="col-sm-10" >
+                          <input class="form-control" type="text" id="account" >
+                      </div>
+                  </div>
+
+                  <button type="button" class="btn btn-primary" style="margin:auto;">提交</button>
+              </form>
+            </div>
+
+
+
+
+    </div>
+</div>
+</div>
+    <gf-footer></gf-footer>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <script src="js/bootstrap-table-zh-CN.js"></script>
+    <script src="dist/manager.js"></script>
+
+    <script src="js/user.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>光伏后台管理系统-用户管理</title>
+<script src="js/verify.js"></script>
+
+    <link href="css/right.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <style media="screen">
+        .gfContainer {
+            display: block;
+            font-family: Microsoft YaHei;
+        }
+
+        .page-header {
+            width: 100%;
+            margin-top: -10px;
+            font-size: .9rem;
+            border-bottom: 2px solid #000;
+            display: flex;
+        }
+        .row div {
+            padding: 10px;
+        }
+
+        .btn {
+            font-size: .5rem;
+
+            margin-left: 10%;
+            min-width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <gf-header></gf-header>
+
+    <div style="display:flex;">
+        <div class="container-fluid tab1">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation"><a href="./credit.html">管理授权</a></li>
+                <li role="presentation"><a href="./user.html">用户管理</a></li>
+                <li role="presentation"><a href="./log.html">日志管理</a></li>
+                <li role="presentation"><a href="./solar.html">组件修改</a></li>
+                <li role="presentation"><a href="./price.html">报价修改</a></li>
+                <li role="presentation" class="active"><a href="./clear.html">系统清理</a></li>
+                <li role="presentation"><a href="./query.html">查询项目</a></li>
+                <li role="presentation"><a href="./cdkey.html">激活码</a></li>
+                <li role="presentation"><a href="./reset.html">密码修改</a></li>
+                <li role="presentation"><a href="#gfHeader">返回顶部</a></li>
+                <li role="presentation"><a href="#gfFooter">返回底部</a></li>
+
+            </ul>
+        </div>
+        <div class="left" >
+
+        </div>
+    <div class="gfContainer">
+        <div class="container-fluid page-header">
+            <h1 style="width:80%; font-size:.8rem;">用户管理</h1> <a href="./manage-index.html" style="display:inline-block; font-size:.7rem; margin-top:20px; margin-left:20px;">返回控制中心</a></div>
+        <h2 style="font-size: .5rem;">【清除所有报告】清除所有已经生成的PDF、EXCEL文件。</h1>
+          <h2 style="font-size: .5rem;">【清除闲置报告】仅清除闲置10天以上的报告。</h1>
+              <h2 style="font-size: .5rem;" >【注意事项】清除工作开始后，系统将会停止生成报告，直到清除工作完成后再恢复！</h1>
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button"  class="btn btn-primary btn-block btn-lg "  >清除所有报告</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button"  class="btn btn-primary btn-block btn-lg " >清除闲置报告</button>
+                </div>
+
+            </div>
+          </div>
+
+</div>
+</div>
+  <gf-footer ></gf-footer>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="dist/manager.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>光伏后台管理系统-控制中心</title>
+    <script src="js/verify.js"></script>
+
+    <link href="css/right.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <style media="screen">
+        .gfContainer {
+            display: block;
+            font-family: Microsoft YaHei;
+        }
+
+        .page-header {
+            width: 100%;
+            margin-top: -10px;
+            font-size: .9rem;
+            border-bottom: 2px solid #000;
+        }
+
+        .row {}
+
+        .row div {
+            padding: .8rem;
+        }
+
+        .btn {
+            width: 90%;
+            margin-left: 5%;
+            min-width: 80px;
+        }
+
+        .row a {
+            font-size: .6rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <gf-header></gf-header>
+
+  <div style="display:flex;">
+    <div class="container-fluid tab1">
+        <ul class="nav nav-pills nav-stacked ">
+            <li role="presentation"><a href="./credit.html">管理授权</a></li>
+            <li role="presentation"><a href="./user.html">用户管理</a></li>
+            <li role="presentation"><a href="./log.html">日志管理</a></li>
+            <li role="presentation"><a href="./solar.html">组件修改</a></li>
+            <li role="presentation"><a href="./price.html">报价修改</a></li>
+            <li role="presentation"><a href="./clear.html">系统清理</a></li>
+            <li role="presentation"><a href="./query.html">查询项目</a></li>
+            <li role="presentation"><a href="./cdkey.html">激活码</a></li>
+            <li role="presentation"><a href="./reset.html">密码修改</a></li>
+            <li role="presentation"><a href="#gfHeader">返回顶部</a></li>
+            <li role="presentation"><a href="#gfFooter">返回底部</a></li>
+
+        </ul>
+    </div>
+    <div class="left" >
+
+    </div>
+    <div class="gfContainer">
+
+        <div class="container-fluid page-header"><h1 style="width:80%; font-size:.8rem;">激活码</h1></div>
+
+      <h1 >请在左侧选择你要做的功能</h1>
+
+    </div>
+  </div>
+
+    <gf-footer></gf-footer>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="dist/manager.js"></script>
+
+
+</body>
+
+</html>

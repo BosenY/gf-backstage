@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>光伏后台管理系统-管理授权</title>
+<script src="js/verify.js"></script>
+
+    <link href="css/right.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <style media="screen">
+        .gfContainer {
+            display: block;
+            font-family: Microsoft YaHei;
+        }
+
+        .page-header {
+            width: 100%;
+            margin-top: -10px;
+            font-size: .9rem;
+            border-bottom: 2px solid #000;
+            display: flex;
+        }
+
+        .row {}
+
+        .row div {
+            padding: 10px;
+        }
+
+        .btn {
+            font-size: .5rem;
+            width: 80%;
+            margin-left: 10%;
+            min-width: 80px;
+        }
+
+        .authorization,
+        .userManagement {
+            width: 70%;
+            margin: auto;
+            margin-top: 30px;
+            display: none;
+        }
+
+        .userManagement {
+            width: 100%;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <gf-header></gf-header>
+    <div style="display:flex;">
+        <div class="container-fluid tab1">
+            <ul class="nav .nav-pills nav-pills nav-stacked">
+                <li role="presentation" class="active"><a href="./credit.html">管理授权</a></li>
+                <li role="presentation"><a href="./user.html">用户管理</a></li>
+                <li role="presentation"><a href="./log.html">日志管理</a></li>
+                <li role="presentation"><a href="./solar.html">组件修改</a></li>
+                <li role="presentation"><a href="./price.html">报价修改</a></li>
+                <li role="presentation" ><a href="./clear.html">系统清理</a></li>
+                <li role="presentation"><a href="./query.html">查询项目</a></li>
+                <li role="presentation"><a href="./cdkey.html">激活码</a></li>
+                <li role="presentation"><a href="./reset.html">密码修改</a></li>
+                <li role="presentation"><a href="#gfHeader">返回顶部</a></li>
+                <li role="presentation"><a href="#gfFooter">返回底部</a></li>
+
+            </ul>
+        </div>
+
+        <div class="left" >
+
+        </div>
+    <div class="gfContainer">
+        <div class="container-fluid page-header">
+            <h1 style="width:80%; font-size:.8rem;">管理授权</h1> <a href="./manage-index.html" style="display:inline-block; font-size:.7rem; margin-top:20px; margin-left:20px;">返回控制中心</a></div>
+        <h2 style="font-size: .5rem;">你只可以授予子账号你所拥有的权限！修改子账户权限时，需要逐个提交修改！</h1>
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button"  class="btn btn-primary btn-block btn-lg btnAuthorization"  >管理授权</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button"  class="btn btn-primary btn-block btn-lg btnUserManagement" >用户管理</button>
+                </div>
+
+            </div>
+          </div>
+          <div class="container-fluid " >
+            <div class="authorization animated " >
+              <form class="form-horizontal">
+
+              <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="loginAccount">登录账号:</label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text" id="loginAccount" placeholder="请输入你的登录账号">
+                </div>
+              </div>
+              <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="loginPwd">登录密码:</label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text" id="loginPwd" placeholder="请输入你的登录密码">
+                </div>
+              </div>
+              <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="repeatPwd">确认密码:</label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text" id="repeatPwd" placeholder="请再输入一遍密码">
+                </div>
+              </div>
+              <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="repeatPwd">授予权限:</label>
+                <div class="col-sm-10">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="checkboxSuccess" value="管理授权">管理授权</label>
+                    <label><input type="checkbox" class="checkboxSuccess" value="用户管理">用户管理</label>
+                    <label><input type="checkbox" class="checkboxSuccess" value="管理日志">管理日志</label>
+                    <label><input type="checkbox" class="checkboxSuccess" value="组件修改">组件修改</label>
+                    <label><input type="checkbox" class="checkboxSuccess" value="报价参数">报价参数</label>
+                    <label><input type="checkbox" class="checkboxSuccess" value="系统清理">系统清理</label>
+                    <label><input type="checkbox" class="checkboxSuccess" value="查询项目">查询项目</label>
+                    <label><input type="checkbox" class="checkboxSuccess" value="激活码">激活码</label>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary">提交</button>
+            </form>
+              </div>
+            <div class="userManagement animated"  >
+              <div style="display:flex; margin-bottom:20px;">
+
+
+<select class="" name="" multiple="multiple" style="width:100%;min-width:100px;height:150px;">
+
+</select>
+<div class="checkbox" style="margin-left:50px;">
+  <label><input type="checkbox" class="checkboxSuccess" value="管理授权">管理授权</label>
+  <label><input type="checkbox" class="checkboxSuccess" value="用户管理">用户管理</label>
+  <label><input type="checkbox" class="checkboxSuccess" value="管理日志">管理日志</label>
+  <label><input type="checkbox" class="checkboxSuccess" value="组件修改">组件修改</label>
+  <label><input type="checkbox" class="checkboxSuccess" value="报价参数">报价参数</label>
+  <label><input type="checkbox" class="checkboxSuccess" value="系统清理">系统清理</label>
+  <label><input type="checkbox" class="checkboxSuccess" value="查询项目">查询项目</label>
+  <label><input type="checkbox" class="checkboxSuccess" value="激活码">激活码</label>
+</div>
+</div>
+<button type="button" class="btn btn-primary">提交</button>
+            </div>
+
+
+
+
+    </div>
+</div>
+</div>
+    <gf-footer></gf-footer>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  <script src="dist/manager.js"></script>
+    <script src="js/credit.js"></script>
+
+</body>
+
+</html>

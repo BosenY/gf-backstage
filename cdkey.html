@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>光伏后台管理系统-激活码</title>
+<script src="js/verify.js"></script>
+
+    <link href="css/right.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <style media="screen">
+        .gfContainer {
+            display: block;
+            font-family: Microsoft YaHei;
+        }
+
+        .page-header {
+            width: 100%;
+            margin-top: -10px;
+            font-size: .9rem;
+            border-bottom: 2px solid #000;
+            display: flex;
+        }
+
+        .row {}
+
+        .row div {
+            padding: 10px;
+        }
+
+        .btn {
+            font-size: .5rem;
+
+
+            min-width: 80px;
+        }
+
+        .newCDKEY,
+        .checkCDKEY {
+            width: 70%;
+            margin: auto;
+            margin-top: 30px;
+            display: none;
+        }
+
+        .checkCDKEY {
+            width: 100%;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <gf-header ></gf-header>
+    <div style="display:flex;">
+        <div class="container-fluid tab1">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation"><a href="./credit.html">管理授权</a></li>
+                <li role="presentation"><a href="./user.html">用户管理</a></li>
+                <li role="presentation"><a href="./log.html">日志管理</a></li>
+                <li role="presentation"><a href="./solar.html">组件修改</a></li>
+                <li role="presentation"><a href="./price.html">报价修改</a></li>
+                <li role="presentation"><a href="./clear.html">系统清理</a></li>
+                <li role="presentation"><a href="./query.html">查询项目</a></li>
+                <li role="presentation" class="active"><a href="./cdkey.html">激活码</a></li>
+                <li role="presentation"><a href="./reset.html">密码修改</a></li>
+                <li role="presentation"><a href="#gfHeader">返回顶部</a></li>
+                <li role="presentation"><a href="#gfFooter">返回底部</a></li>
+
+            </ul>
+        </div>
+
+<div class="left" >
+
+</div>
+    <div class="gfContainer">
+        <div class="container-fluid page-header">
+            <h1 style="width:80%; font-size:.8rem;">激活码</h1> <a href="./manage-index.html" style="display:inline-block; font-size:.7rem; margin-top:20px; margin-left:20px;">返回控制中心</a></div>
+        <h2 style="font-size: .5rem;">【生成新的CDKEY】生成10个新的CDKEY，请生成后立即复制保存！</h1>
+          <h2 style="font-size: .5rem;">【查询CDKEY状态】输入CDKEY值，查询是否被使用。</h1>
+              <h2 style="font-size: .5rem;" class="CDKEYState">【当前CDKEY概况】当前系统中共有CDKEY【2】枚，已被使用【0】枚。</h1>
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button"  class="btn btn-primary btn-block btn-lg creatNewCDKEY"  >生成新的CDKEY</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button"  class="btn btn-primary btn-block btn-lg queryCDKEY" >查询CDKEY状态</button>
+                </div>
+
+            </div>
+          </div>
+          <div class="container-fluid " >
+            <div class="newCDKEY animated" >
+              <button type="button"  class="btn btn-primary btn-block btn-lg buildCDY" style="width:200px; margin:auto;">点击生成新的CDKEY</button>
+              <table id="table"></table>
+              </div>
+            <div class="checkCDKEY animated"  >
+              <form class="form-horizontal">
+
+              <div class="form-group form-group-sm" style="display:flex;">
+                <label class=" control-label col-md-4" for="cdkeyId">请输入查询的序列号号码:</label>
+                <div class="col-md-8" style="display:flex;">
+                  <input class="form-control "  type="text" id="cdkeyId" placeholder="请输入查询的序列号号码" />
+                  <button type="button"  class="btn btn-primary btn-block btn-xs ">查询CDKEY状态</button>
+                </div>
+              </div>
+
+            </form>
+            </div>
+
+
+
+
+    </div>
+</div>
+</div>
+    <gf-footer ></gf-footer>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <script src="js/bootstrap-table-zh-CN.js"></script>
+    <script src="dist/manager.js"></script>
+    <script src="js/cdkey.js"></script>
+
+</body>
+
+</html>
